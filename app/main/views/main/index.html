@@ -1,0 +1,19 @@
+<:Title>
+  Home
+
+<:Body>
+  <h1>Servicio Social</h1>
+
+<p>Aquí encontrará información sobre proyectos existentes de Servicio Social, y podrá inscribirse en los mismos. Además, tendrá su usuario e información de Servicio Social.</p>
+
+<h3>Proyectos Disponibles {{ _todos.size }}</h3>  
+
+<table class="table">
+{{ _todos.each do |todo| }}
+<tr>
+	<td class="{{ if todo._completed }}complete{{ end }}">{{ todo._label }}</td>
+	
+	
+</tr>
+{{ end }}
+</table>
