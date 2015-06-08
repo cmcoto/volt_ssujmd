@@ -3,21 +3,57 @@ module Main
   class MainController < Volt::ModelController
     model :store
   
-    #before_action :require_login, only: :about
+    before_action :require_login, only: :index
     
     def add_todo
       _todos << page._new_todo.to_h
       page._new_todo._label =""
     end
+
+    def incomplete
+      _todos.count {|t| !t._completed }
+    end
+
+    def current_index
+      params._index.to_i
+    end
+
+    def current_todo
+      _todos[current_index]
+    end
+
+    def add_description
+      _descriptions << page._new_description.to_h
+    end
+
+    def add_inscrito
+      
+      _inscritos << page._new_inscrito.to_h
+      page._new_inscrito._label = ""
+    end
+
+    def send_message
+      store._messages << page._form
+      reset_message
+    end
+
+    def reset_message
+      page._form = Message.new
+    end
+
+    
+
     def index
       # Add code for when the index view is loaded
-     
+     reset_message
+
     end
 
     def about
       # Add code for when the about view is loaded
     end
 
+    
     private
 
     # The main template contains a #template binding that shows another
