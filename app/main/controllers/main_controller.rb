@@ -53,6 +53,9 @@ module Main
       # Add code for when the about view is loaded
     end
 
+    def chat
+      reset_message
+    end
     
     private
 
