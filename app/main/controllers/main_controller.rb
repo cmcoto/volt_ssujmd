@@ -3,7 +3,7 @@ module Main
   class MainController < Volt::ModelController
     model :store
   
-    before_action :require_login, only: :index
+    before_action :require_login #, #only: :index
     
     def add_todo
       _todos << page._new_todo.to_h

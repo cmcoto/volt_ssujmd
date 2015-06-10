@@ -33,5 +33,19 @@
 
 <textarea>{{ current_todo._description }}</textarea>
 
+<hr/>
 
+<h4> Número de Usuarios: {{ users.size }} </4>
 
+<table class="table">
+{{ users.each_with_index do |user, index| }}
+
+<tr>
+	<td>{{ user._name }}</td>
+	<td><button e-click="user.destroy">Borrar Usuario</button></td>
+	<td><button e-click="user._account">Cuenta de Usuario</button></td>
+
+	
+</tr>
+{{ end }}
+</table>

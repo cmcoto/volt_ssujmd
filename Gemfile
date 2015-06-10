@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'volt', '0.9.3.pre4'
+gem 'volt', '0.9.3'
 
 # volt uses mongo as the default data store.
-gem 'volt-mongo', '~> 0.1.0'
+gem 'volt-mongo'
 
 # The following gem's are optional for themeing
 # Twitter bootstrap
