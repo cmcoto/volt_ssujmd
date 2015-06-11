@@ -34,7 +34,6 @@ module Main
 
     def send_message
       store._messages << page._form 
-      model._created_at = Time.now
       reset_message
     end
 
