@@ -38,7 +38,8 @@
 <h4> Número de Usuarios: {{ users.size }} </4>
 
 <table class="table">
-{{ users.each_with_index do |user, index| }}
+
+{{ store.users.all.each do |user|  }}
 
 <tr>
 	<td>{{ user._name }}</td>
