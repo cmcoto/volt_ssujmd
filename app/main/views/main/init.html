@@ -39,12 +39,22 @@
 
 <table class="table">
 
+<tr>
+	<td><strong>Nombre</strong></td>
+	<td><strong>Carnet</strong></td>
+	<td><strong>Proyectos</strong></td>
+	<td><strong>Horas Sociales</strong></td>
+	<td><strong>Borrar Usuario</strong></td>
+	
+</tr>
+
 {{ store.users.all.each do |user|  }}
 
 <tr>
 	<td>{{ user._name }}</td>
 	<td>{{ user._carnet }}</td>
 	<td>{{ user._proyecto }}</td>
+	<td>{{ user._hora }}</td>
 	<td><button e-click="user.destroy">Borrar Usuario</button></td>
 	<td><button e-click="user._account">Cuenta de Usuario</button></td>
 
