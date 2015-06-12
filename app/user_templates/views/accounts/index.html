@@ -1,0 +1,28 @@
+<:Title>
+  Your Account
+
+<:Body>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="span4 offset4 well">
+        <legend>Basic </legend>
+
+        <form e-submit="save">
+          <:fields:text value="{{ _name }}" />
+
+          <button class="btn btn-info btn-block">Save</button>
+        </form>
+
+      </div>
+      <hr />
+      <div class="span4 offset4 well">
+        <legend>Update Password</legend>
+        <form e-submit="save">
+          <:fields:text type="password" value="{{ _password }}" />
+          <button class="btn btn-info btn-block">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
