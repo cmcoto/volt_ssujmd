@@ -41,11 +41,13 @@ module Main
       page._form = Message.new
     end
 
-    
+    def admin
+
+    end
 
     def index
       # Add code for when the index view is loaded
-     reset_message
+     reset_message 
 
     end
 
@@ -56,7 +58,8 @@ module Main
     def chat
       reset_message
     end
-    
+
+        
     private
 
     # The main template contains a #template binding that shows another
