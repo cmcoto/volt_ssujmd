@@ -1,8 +1,8 @@
 <:Title>
-  Admin
+  admins index
 
 <:Body>
-
+  <h1>Find me in app/main/admins/index.html</h1>
 
 
 <form e-submit="add_todo" role= "form">
@@ -46,6 +46,7 @@
 	<td><strong>Nombre</strong></td>
 	<td><strong>Carnet</strong></td>
 	<td><strong>Proyectos</strong></td>
+	<td><strong>User Admin</strong></td>
 	<td><strong>Horas Sociales</strong></td>
 	<td><strong>Borrar Usuario</strong></td>
 	
@@ -57,7 +58,7 @@
 	<td>{{ user._name }}</td>
 	<td>{{ user._carnet }}</td>
 	<td>{{ user._proyecto }}</td>
-
+	<td>{{ user._admin }}</td>
 	<td>{{ user._hora }}</td>
 	<td><button e-click="user.destroy">Borrar Usuario</button></td>
 	<td><button e-click="user._account">Cuenta de Usuario</button></td>

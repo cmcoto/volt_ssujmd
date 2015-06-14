@@ -1,5 +1,6 @@
-class Admin < Volt::Model
-	def ensure_admin!
+module Main
+  class AdminsController < Volt::ModelController
+  	def ensure_admin!
   		Volt
   			.fetch_current_user
     		.then do |user|
@@ -10,4 +11,6 @@ class Admin < Volt::Model
 		flash._errors << "Get out of here, guy!"
   		redirect_to "/"
   	end
+
+  end
 end

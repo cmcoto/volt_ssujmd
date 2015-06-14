@@ -41,10 +41,7 @@ module Main
       page._form = Message.new
     end
 
-    def admin
-
-    end
-
+    
     def index
       # Add code for when the index view is loaded
      reset_message 
