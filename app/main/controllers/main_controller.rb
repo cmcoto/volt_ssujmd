@@ -58,6 +58,7 @@ module Main
 
     def admin
       ensure_admin!
+      users_sort
     end
     
     def ensure_admin!
@@ -73,7 +74,11 @@ module Main
       redirect_to "/"
     end
 
-        
+    def users_sort
+      all_users = store.users.all
+      all_users.sort { |x,y| y._name <=> x._name } 
+    end    
+
     private
 
     # The main template contains a #template binding that shows another

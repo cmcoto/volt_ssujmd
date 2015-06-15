@@ -10,9 +10,15 @@
         <form e-submit="save">
           <:fields:text value="{{ _name }}" />
           <:fields:text value="{{ _carnet }}" />
-          <:fields:textarea value="{{ _proyecto }}" />
           <p>Escriba los proyectos en los que está inscrito</p>
-          <:fields:text value="{{ _hora }}" />
+          <:fields:textarea value="{{ _proyecto1 }}" />
+          <:fields:text value="{{ _hora1 }}" />
+          <p>Cantidad de Horas YA PROCESADAS</p>
+          <:fields:textarea value="{{ _proyecto2 }}" />
+          <:fields:text value="{{ _hora2 }}" />
+          <p>Cantidad de Horas YA PROCESADAS</p>
+          <:fields:textarea value="{{ _proyecto3 }}" />
+          <:fields:text value="{{ _hora3 }}" />
           <p>Cantidad de Horas YA PROCESADAS</p>
           <button class="btn btn-info btn-block">Save</button>
         </form>

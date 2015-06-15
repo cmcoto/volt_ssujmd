@@ -45,9 +45,20 @@
 <tr>
 	<td><strong>Nombre</strong></td>
 	<td><strong>Carnet</strong></td>
-	<td><strong>Proyectos</strong></td>
+	<td><strong>Proyecto1</strong></td>
 	<td><strong>Horas Sociales</strong></td>
+	<td><strong>Borrar</strong></td>
+	<td><strong>Borrar Horas</strong></td>
+	<td><strong>Proyecto2</strong></td>
+	<td><strong>Horas Sociales</strong></td>
+	<td><strong>Borrar</strong></td>
+	<td><strong>Borrar Horas</strong></td>
+	<td><strong>Proyecto3</strong></td>
+	<td><strong>Horas Sociales</strong></td>
+	<td><strong>Borrar</strong></td>
+	<td><strong>Borrar Horas</strong></td>
 	<td><strong>Borrar Usuario</strong></td>
+
 	
 </tr>
 
@@ -56,13 +67,22 @@
 <tr>
 	<td>{{ user._name }}</td>
 	<td>{{ user._carnet }}</td>
-	<td>{{ user._proyecto }}</td>
-
-	<td>{{ user._hora }}</td>
+	<td>{{ user._proyecto1 }}</td>
+	<td>{{ user._hora1 }}</td>
+	<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
+	<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
+	<td>{{ user._proyecto2 }}</td>
+	<td>{{ user._hora2 }}</td>
+	<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
+	<td><button e-click="user._hora2 = nil">Borrar H2</button></td>
+	<td>{{ user._proyecto3 }}</td>
+	<td>{{ user._hora3 }}</td>
+	<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
+	<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
 	<td><button e-click="user.destroy">Borrar Usuario</button></td>
-	<td><button e-click="user._account">Cuenta de Usuario</button></td>
-
+	
 	
 </tr>
 {{ end }}
 </table>
+
