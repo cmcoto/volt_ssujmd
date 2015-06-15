@@ -2,7 +2,7 @@
 
 client '/about', action: 'about'
 
-client '/admin', controller: 'admins', action: 'index'
+client '/admin', action: 'admin'
 client '/chat', action: 'chat'
 
 # Routes for login and signup, provided by user_templates component gem
