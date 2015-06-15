@@ -56,7 +56,22 @@ module Main
       reset_message
     end
 
-   
+    def admin
+      ensure_admin!
+    end
+    
+    def ensure_admin!
+      Volt
+        .fetch_current_user
+        .then do |user|
+        oh_no!(user) unless user._admin
+      end
+    end
+    
+    def oh_no!(user)  
+    flash._errors << "Usted no es Administrador!"
+      redirect_to "/"
+    end
 
         
     private
