@@ -1,0 +1,11 @@
+<:Subject>
+  Bienvenido a La Plataforma de Servicio Social de la Escuela de Psicología.
+
+<:Html>
+  <h1>Bienvenido(a) {{ name }}</h1>
+
+  <p>Para nosotros como escuela es un gusto poder atender sus preguntas. Al usar la plataforma, usted estará al día con la información importante sobre proyectos disponibles, y sobretodo de sus horas sociales. </p>
+
+<:Text>
+Para nosotros como escuela es un gusto poder atender sus preguntas. Al usar la plataforma, usted estará al día con la información importante sobre proyectos disponibles, y sobretodo de sus horas sociales. 
+

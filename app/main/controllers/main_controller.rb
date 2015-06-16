@@ -59,6 +59,7 @@ module Main
     def admin
       ensure_admin!
       users_sort
+
     end
     
     def ensure_admin!
@@ -79,6 +80,7 @@ module Main
       all_users.sort { |x,y| y._name <=> x._name } 
     end    
 
+   
     private
 
     # The main template contains a #template binding that shows another
