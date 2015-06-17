@@ -34,6 +34,7 @@ module Main
 
     def send_message
       store._messages << page._form 
+      message_time
       reset_message
     end
 
@@ -54,6 +55,10 @@ module Main
 
     def chat
       reset_message
+    end
+
+    def message_time
+      time = Time.now
     end
 
     def admin

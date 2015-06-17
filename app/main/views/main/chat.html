@@ -18,8 +18,8 @@ Chat
 							{{ store._messages.each do |message| }}
 						<p>
 						<strong> {{ message.user.then(&:_name) }}</strong>
-						<span>  {{ message._time }} </span>
-						<span> {{ message._body }}</span>
+						<span>  {{ message_time }} </span>
+						<span class="message"> {{ message._body }}</span>
 						<td><button e-click="message.destroy">X</button></td>
 						</p>
 						{{ end }}
