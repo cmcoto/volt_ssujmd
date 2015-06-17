@@ -11,20 +11,23 @@
 <h4>Disponibles {{ incomplete }}</h4> 
 <h5>Haga click en cada proyecto para ver descripción.</h5>
 
-<table class="table">
-{{ _todos.each_with_index do |todo, index| }}
+<div class="panel panel-default">
+  <div class="panel-body">
+		<table class="table">
+		{{ _todos.each_with_index do |todo, index| }}
 
-<tr 
-	e-click="params._index = index"
-	class="{{ if current_index == index }}selected{{ end }}"
->
-	<td class="{{ if todo._completed }}complete{{ end }}">{{ todo._label }}</td>
-	
-	
-</tr>
-{{ end }}
-</table>
-
+		<tr 
+			e-click="params._index = index"
+			class="{{ if current_index == index }}selected{{ end }}"
+		>
+			<td class="{{ if todo._completed }}complete{{ end }}">{{ todo._label }}</td>
+			
+			
+		</tr>
+		{{ end }}
+		</table>
+	</div>
+</div>
 <hr />
 
 <h1> {{ current_todo._label}} </h1>

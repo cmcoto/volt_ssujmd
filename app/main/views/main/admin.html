@@ -40,54 +40,57 @@
 
 <h4> Número de Usuarios: {{ users.size }} </4>
 
-<table class="table">
+<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Usuarios</strong></div>
+	<table class="table">
 
-<tr>
-	<td><strong>Nombre</strong></td>
-	<td><strong>Carnet</strong></td>
-	<td><strong>E-mail</strong></td>
-	<td><strong>Teléfonos</strong></td>
-	<td><strong>Proyecto1</strong></td>
-	<td><strong>Horas Sociales</strong></td>
-	<td><strong>Borrar</strong></td>
-	<td><strong>Borrar Horas</strong></td>
-	<td><strong>Proyecto2</strong></td>
-	<td><strong>Horas Sociales</strong></td>
-	<td><strong>Borrar</strong></td>
-	<td><strong>Borrar Horas</strong></td>
-	<td><strong>Proyecto3</strong></td>
-	<td><strong>Horas Sociales</strong></td>
-	<td><strong>Borrar</strong></td>
-	<td><strong>Borrar Horas</strong></td>
-	<td><strong>Borrar Usuario</strong></td>
+		<tr>
+			<td><strong>Nombre</strong></td>
+			<td><strong>Carnet</strong></td>
+			<td><strong>E-mail</strong></td>
+			<td><strong>Teléfonos</strong></td>
+			<td><strong>Proyecto1</strong></td>
+			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Borrar</strong></td>
+			<td><strong>Borrar Horas</strong></td>
+			<td><strong>Proyecto2</strong></td>
+			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Borrar</strong></td>
+			<td><strong>Borrar Horas</strong></td>
+			<td><strong>Proyecto3</strong></td>
+			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Borrar</strong></td>
+			<td><strong>Borrar Horas</strong></td>
+			<td><strong>Borrar Usuario</strong></td>
 
-	
-</tr>
+			
+		</tr>
 
-{{ store.users.all.each do |user|  }}
+		{{ store.users.all.each do |user|  }}
 
-<tr>
-	<td>{{ user._name }}</td>
-	<td>{{ user._carnet }}</td>
-	<td>{{ user._email }}</td>
-	<td>{{ user._telefono }}</td>
-	<td>{{ user._proyecto1 }}</td>
-	<td>{{ user._hora1 }}</td>
-	<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
-	<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
-	<td>{{ user._proyecto2 }}</td>
-	<td>{{ user._hora2 }}</td>
-	<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
-	<td><button e-click="user._hora2 = nil">Borrar H2</button></td>
-	<td>{{ user._proyecto3 }}</td>
-	<td>{{ user._hora3 }}</td>
-	<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
-	<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
-	<td><button e-click="sendmail_signup">Send Email</button></td>
-	<td><button e-click="user.destroy">Borrar Usuario</button></td>
-	
-	
-</tr>
-{{ end }}
-</table>
-
+		<tr>
+			<td>{{ user._name }}</td>
+			<td>{{ user._carnet }}</td>
+			<td>{{ user._email }}</td>
+			<td>{{ user._telefono }}</td>
+			<td>{{ user._proyecto1 }}</td>
+			<td>{{ user._hora1 }}</td>
+			<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
+			<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
+			<td>{{ user._proyecto2 }}</td>
+			<td>{{ user._hora2 }}</td>
+			<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
+			<td><button e-click="user._hora2 = nil">Borrar H2</button></td>
+			<td>{{ user._proyecto3 }}</td>
+			<td>{{ user._hora3 }}</td>
+			<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
+			<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
+			<td><button e-click="sendmail_signup">Send Email</button></td>
+			<td><button e-click="user.destroy">Borrar Usuario</button></td>
+			
+			
+		</tr>
+	{{ end }}
+	</table>
+</div>
