@@ -10,9 +10,9 @@
 	<input value="{{ page._new_todo!._label }}" />
 </form>
 
-<h3>Proyectos {{ _todos.size }} </h3> 
+<h3><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>Proyectos {{ _todos.size }} </h3> 
 
-<h4>Disponibles {{ incomplete }}</h4> 
+<div class="disponibles"><h4>Disponibles {{ incomplete }}</h4></div> 
 
 <table class="table">
 {{ _todos.each_with_index do |todo, index| }}
@@ -87,7 +87,7 @@
 			<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
 			<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
 			<td><button e-click="sendmail_signup">Send Email</button></td>
-			<td><button e-click="user.destroy">Borrar Usuario</button></td>
+			<td><button type="button" class="btn btn-warning" e-click="user.destroy"><div class="destroy">Borrar Usuario</div></button></td>
 			
 			
 		</tr>
