@@ -9,7 +9,7 @@
 <h3><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Proyectos {{ _todos.size }} </h3>
 
 <div class="disponibles"><h4>Disponibles <span class="badge">{{ incomplete }}</span></h4></div> 
-<h5>Haga click en cada proyecto para ver descripción.</h5>
+<h5>Haga click en cada proyecto para ver descripción ABAJO.</h5>
 
 <div class="panel panel-default">
   <div class="panel-body">
@@ -29,33 +29,34 @@
 	</div>
 </div>
 <hr />
+<div class="description">
+	<tr>
+	<h1> {{ current_todo._label}} </h1>
 
-<h1> {{ current_todo._label}} </h1>
+	<h4> {{ current_todo._description }} </h4>
 
-<h4> {{ current_todo._description }} </h4>
+	</tr>
 
-</tr>
+	<hr />
 
-<hr />
-
-<h4> Alumnos Inscritos {{ _inscritos._size }}</h4>
-
-
-<table class="table">
-{{ _inscritos.each_with_index do |inscrito, index| }}
-
-<tr>
-	<td>{{ inscrito._label }}</td>
-	<td><button e-click="inscrito.destroy">X</button></td>
-	
-</tr>
-{{ end }}
-</table>
+	<h4> Alumnos Inscritos {{ _inscritos._size }}</h4>
 
 
+	<table class="table">
+	{{ _inscritos.each_with_index do |inscrito, index| }}
 
-<textarea>{{ current_todo._inscrito }}</textarea>
+	<tr>
+		<td>{{ inscrito._label }}</td>
+		<td><button e-click="inscrito.destroy">X</button></td>
+		
+	</tr>
+	{{ end }}
+	</table>
 
+
+
+	<textarea>{{ current_todo._inscrito }}</textarea>
+</div>
 <div>
 	<h3>Tiene Preguntas? Vaya al <a href="https://secret-anchorage-6384.herokuapp.com/chat">Chat Para Consultas</a></h3>
 </div>
