@@ -12,7 +12,7 @@
 
 <h3><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>Proyectos {{ _todos.size }} </h3> 
 
-<div class="disponibles"><h4>Disponibles {{ incomplete }}</h4></div> 
+<div class="disponibles"><h4>Disponibles <span class="badge"> {{ incomplete }}</span></h4></div> 
 
 <table class="table">
 {{ _todos.each_with_index do |todo, index| }}
