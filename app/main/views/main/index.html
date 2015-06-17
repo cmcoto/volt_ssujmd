@@ -6,15 +6,15 @@
 
 <p><italic>Aquí encontrará información sobre proyectos existentes de Servicio Social</italic>, y podrá inscribirse en los mismos. Además, tendrá su usuario e información de Servicio Social.</p>
 
-<h3>Proyectos {{ _todos.size }}</h3> 
+<h3><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Proyectos {{ _todos.size }} </h3>
 
-<h4>Disponibles {{ incomplete }}</h4> 
+<div class="disponibles"><h4>Disponibles {{ incomplete }}</h4></div> 
 <h5>Haga click en cada proyecto para ver descripción.</h5>
 
 <div class="panel panel-default">
   <div class="panel-body">
 		<table class="table">
-		{{ _todos.each_with_index do |todo, index| }}
+	<h4>{{ _todos.each_with_index do |todo, index| }}</h4>
 
 		<tr 
 			e-click="params._index = index"
