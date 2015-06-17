@@ -58,7 +58,7 @@ module Main
     end
 
     def message_time
-      time = Time.now
+      time = Time.now.asctime
     end
 
     def admin

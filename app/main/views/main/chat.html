@@ -20,7 +20,7 @@ Chat
 						<strong> {{ message.user.then(&:_name) }}</strong>
 						<span>  {{ message_time }} </span>
 						<span class="message"> {{ message._body }}</span>
-						<td><button e-click="message.destroy">X</button></td>
+						<td><span class="glyphicon glyphicon-trash"><button e-click="message.destroy">X</button></span></td>
 						</p>
 						{{ end }}
 						</table></div>
