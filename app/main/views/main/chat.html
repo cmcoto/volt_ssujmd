@@ -4,7 +4,8 @@ Chat
 	<div class="row">
 		<div class="col-lg-22">
 			<div class="panel panel-default">
-				<div class="panel heading"><h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Chat</h3></div>
+				<div class="panel heading"><h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Chat </h3></div>
+				<div class="mensajes"><h5>Mensajes <span class="badge">{{ messages.size }}</span></h5></div> 
 				<div class="panel body">
 					<form class="form-inline center" e-submit="send_message">
 						<div class="form-group">
@@ -14,16 +15,19 @@ Chat
 					</form>
 
 					</hr>
-						<div><table class="table">
+						<div>
+							<table class="table">
 							{{ store._messages.each do |message| }}
-						<p>
-						<strong> {{ message.user.then(&:_name) }}</strong>
-						<span>  {{ message_time }} </span>
-						<span class="message"> {{ message._body }}</span>
-						<td><span class="glyphicon glyphicon-trash"><button e-click="message.destroy">X</button></span></td>
-						</p>
-						{{ end }}
-						</table></div>
+							<p>
+							<strong> {{ message.user.then(&:_name) }}</strong>
+							<span>  {{ message_time }} </span>
+							<span class="message"> {{ message._body }}</span>
+							<td><span class="glyphicon glyphicon-trash"></span><button e-click="message.destroy">X</button></td>
+														
+							</p>
+							{{ end }}
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
