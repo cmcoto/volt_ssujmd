@@ -9,6 +9,8 @@ Chat
 				<div class="panel body">
 					<form class="form-inline center" e-submit="send_message">
 						<div class="form-group">
+							<input type="date_field" placeholder="{{ Time.now }}" value="{{ page._form.time }}" />
+							<input type="text" class="form" placeholder="Escriba el Título" value=" {{ page._form.title }}">
 							<input type="text" class="form" placeholder="Escriba una consulta" value=" {{ page._form.body }}">
 						</div>
 					<input type="submit" class="button"/>
@@ -20,7 +22,8 @@ Chat
 							{{ store._messages.each do |message| }}
 							<p>
 							<strong> {{ message.user.then(&:_name) }}</strong>
-							<span>  {{ message_time }} </span>
+							<span class="message_time"> {{ message._time }}</span>
+							<span class="message_title"> {{ message._title }}</span>
 							<span class="message"> {{ message._body }}</span>
 							<td><span class="glyphicon glyphicon-trash"></span><button e-click="message.destroy">X</button></td>
 														

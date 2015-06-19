@@ -79,6 +79,7 @@
 			<td>{{ user._hora1 }}</td>
 			<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
 			<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
+			<td><input type="radio" checked="{{ user._proyecto1._completed }}"></td>
 			<td>{{ user._proyecto2 }}</td>
 			<td>{{ user._hora2 }}</td>
 			<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
@@ -89,7 +90,7 @@
 			<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
 			<td><button e-click="sendmail_signup">Send Email</button></td>
 			<td><button type="button" class="btn btn-warning" e-click="user.destroy"><div class="destroy">Borrar Usuario</div></button></td>
-			
+			<td><button e-click="MailSenderTask.send(first)">X</button></td>
 			
 		</tr>
 	{{ end }}

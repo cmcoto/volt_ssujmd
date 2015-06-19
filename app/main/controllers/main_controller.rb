@@ -33,8 +33,9 @@ module Main
     end
 
     def send_message
-      store._messages << page._form 
-      message_time
+      msg = page._form
+      msg._created_at = Time.now
+      store._messages << msg
       reset_message
     end
 
@@ -58,12 +59,15 @@ module Main
     end
 
     def message_time
-      time = Time.now.asctime
+     time = Time.now.asctime
     end
+
+    
 
     def admin
       ensure_admin!
       users_sort
+     
 
     end
     
