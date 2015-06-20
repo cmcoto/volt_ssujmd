@@ -53,14 +53,29 @@
 			<td><strong>Teléfonos</strong></td>
 			<td><strong>Proyecto1</strong></td>
 			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Solicitud</strong></td>
+			<td><strong>Plan</strong></td>
+			<td><strong>Avances</strong></td>
+			<td><strong>Final</strong></td>}
+			<td><strong>Carta</strong></td>
 			<td><strong>Borrar</strong></td>
 			<td><strong>Borrar Horas</strong></td>
 			<td><strong>Proyecto2</strong></td>
 			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Solicitud</strong></td>
+			<td><strong>Plan</strong></td>
+			<td><strong>Avances</strong></td>
+			<td><strong>Final</strong></td>}
+			<td><strong>Carta</strong></td>
 			<td><strong>Borrar</strong></td>
 			<td><strong>Borrar Horas</strong></td>
 			<td><strong>Proyecto3</strong></td>
 			<td><strong>Horas Sociales</strong></td>
+			<td><strong>Solicitud</strong></td>
+			<td><strong>Plan</strong></td>
+			<td><strong>Avances</strong></td>
+			<td><strong>Final</strong></td>}
+			<td><strong>Carta</strong></td>
 			<td><strong>Borrar</strong></td>
 			<td><strong>Borrar Horas</strong></td>
 			<td><strong>Borrar Usuario</strong></td>
@@ -77,20 +92,29 @@
 			<td>{{ user._telefono }}</td>
 			<td>{{ user._proyecto1 }}</td>
 			<td>{{ user._hora1 }}</td>
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
- 				 ...
-  			<li class="dropdown-header">Dropdown header</li>
- 				 ...
-			</ul>
+			<td>{{ user._solicitud1 }}</td>
+			<td>{{ user._plan1 }}</td>
+			<td>{{ user._avances1 }}</td>
+			<td>{{ user._final1 }}</td>
+			<td>{{ user._carta1 }}</td>
 			<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
 			<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
-			<td><input type="radio" checked="{{ user._proyecto1._completed }}"></td>
 			<td>{{ user._proyecto2 }}</td>
 			<td>{{ user._hora2 }}</td>
+			<td>{{ user._solicitud2 }}</td>
+			<td>{{ user._plan2 }}</td>
+			<td>{{ user._avances2 }}</td>
+			<td>{{ user._final2 }}</td>
+			<td>{{ user._carta2 }}</td>
 			<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
 			<td><button e-click="user._hora2 = nil">Borrar H2</button></td>
 			<td>{{ user._proyecto3 }}</td>
 			<td>{{ user._hora3 }}</td>
+			<td>{{ user._solicitud3 }}</td>
+			<td>{{ user._plan3 }}</td>
+			<td>{{ user._avances3 }}</td>
+			<td>{{ user._final3 }}</td>
+			<td>{{ user._carta3 }}</td>
 			<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
 			<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
 			<td><button e-click="sendmail_signup">Send Email</button></td>
