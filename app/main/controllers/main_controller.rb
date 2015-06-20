@@ -64,12 +64,12 @@ module Main
 
     
 
-    def admin
-      ensure_admin!
-      users_sort
+    #def admin
+     # ensure_admin!
+      #users_sort
      
 
-    end
+   # end
     
     def ensure_admin!
       Volt

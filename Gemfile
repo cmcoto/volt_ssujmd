@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.2.2' 
-gem 'volt', '0.9.4.pre2'
+gem 'volt', git: 'https://github.com/voltrb/volt.git'
 
 # volt uses mongo as the default data store.
 gem 'volt-mongo'

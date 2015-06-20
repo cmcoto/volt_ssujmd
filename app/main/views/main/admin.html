@@ -77,6 +77,11 @@
 			<td>{{ user._telefono }}</td>
 			<td>{{ user._proyecto1 }}</td>
 			<td>{{ user._hora1 }}</td>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+ 				 ...
+  			<li class="dropdown-header">Dropdown header</li>
+ 				 ...
+			</ul>
 			<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
 			<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
 			<td><input type="radio" checked="{{ user._proyecto1._completed }}"></td>
