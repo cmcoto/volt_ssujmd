@@ -92,29 +92,74 @@
 			<td>{{ user._telefono }}</td>
 			<td>{{ user._proyecto1 }}</td>
 			<td>{{ user._hora1 }}</td>
-			<td>{{ user._solicitud1 }}</td>
-			<td>{{ user._plan1 }}</td>
-			<td>{{ user._avances1 }}</td>
-			<td>{{ user._final1 }}</td>
-			<td>{{ user._carta1 }}</td>
+			
+			<div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <td>Solicitud<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._solicitud1 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Plan <input type="text" class="form-control" placeholder="#enLibro" value="{{ user._plan1 }}"></td>
+                </span>  
+                <span class="input-group-addon">
+                  <td>Avances<input type="text" class="form-control" placeholder="#Avances" value="{{ user._avances1 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Final<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._final1 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Carta<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._carta1 }}"></td>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+			
 			<td><button e-click="user._proyecto1 = nil">Borrar P1</button></td>
 			<td><button e-click="user._hora1 = nil">Borrar H1</button></td>
 			<td>{{ user._proyecto2 }}</td>
 			<td>{{ user._hora2 }}</td>
-			<td>{{ user._solicitud2 }}</td>
-			<td>{{ user._plan2 }}</td>
-			<td>{{ user._avances2 }}</td>
-			<td>{{ user._final2 }}</td>
-			<td>{{ user._carta2 }}</td>
+			<div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <td>Solicitud  <input type="text" class="form-control" placeholder="#enLibro" value="{{ user._solicitud2 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Plan <input type="text" class="form-control" placeholder="#enLibro" value="{{ user._plan2 }}"></td>
+                </span>  
+                <span class="input-group-addon">
+                  <td>Avances<input type="text" class="form-control" placeholder="#Avances" value="{{ user._avances2 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Final<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._final2 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Carta<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._carta2 }}"></td>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+			
 			<td><button e-click="user._proyecto2 = nil">Borrar P2</button></td>
 			<td><button e-click="user._hora2 = nil">Borrar H2</button></td>
 			<td>{{ user._proyecto3 }}</td>
 			<td>{{ user._hora3 }}</td>
-			<td>{{ user._solicitud3 }}</td>
-			<td>{{ user._plan3 }}</td>
-			<td>{{ user._avances3 }}</td>
-			<td>{{ user._final3 }}</td>
-			<td>{{ user._carta3 }}</td>
+			<div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <td>Solicitud  <input type="text" class="form-control" placeholder="#enLibro" value="{{ user._solicitud3 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Plan <input type="text" class="form-control" placeholder="#enLibro" value="{{ user._plan3 }}"></td>
+                </span>  
+                <span class="input-group-addon">
+                  <td>Avances<input type="text" class="form-control" placeholder="#Avances" value="{{ user._avances3 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Final<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._final3 }}"></td>
+                </span>
+                <span class="input-group-addon">
+                  <td>Carta<input type="text" class="form-control" placeholder="#enLibro" value="{{ user._carta3 }}"></td>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
 			<td><button e-click="user._proyecto3 = nil">Borrar P3</button></td>
 			<td><button e-click="user._hora3 = nil">Borrar H3</button></td>
 			<td><button e-click="sendmail_signup">Send Email</button></td>
