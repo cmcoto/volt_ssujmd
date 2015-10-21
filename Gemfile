@@ -3,7 +3,7 @@ ruby '2.2.2'
 gem 'volt'
 
 # volt uses mongo as the default data store.
-gem 'volt-mongo'
+gem 'volt-mongo', git: 'https://github.com/voltrb/volt-mongo.git'
 
 # The following gem's are optional for themeing
 # Twitter bootstrap
@@ -48,7 +48,7 @@ platform :mri do
 
   # Thin is the default volt server, you Puma is also supported
   gem 'thin', '~> 1.6.0'
-  gem 'bson_ext', '~> 1.9.0'
+  gem 'bson_ext'#, '~> 1.9.0'
 
 
 end
