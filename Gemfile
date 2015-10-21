@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.2.2' 
-gem 'volt', git: 'https://github.com/voltrb/volt.git'
+gem 'volt'
 
 # volt uses mongo as the default data store.
 gem 'volt-mongo'
@@ -49,4 +49,6 @@ platform :mri do
   # Thin is the default volt server, you Puma is also supported
   gem 'thin', '~> 1.6.0'
   gem 'bson_ext', '~> 1.9.0'
+
+
 end
